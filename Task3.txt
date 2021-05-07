@@ -1,3 +1,11 @@
-1. Web3 is used in componentDidMount to get the user's account and contract instance. It then allows   for interaction with the smart contract from a webpage. We connect to the blockchain with metamask, which injects web3 into the webpage. To interact with the blockchain, Web3 uses JSON RPC. 
+1. Web3 is used in componentDidMount to get the user's account and contract instance. It then allows
+for interaction with the smart contract from a webpage. We connect to the blockchain with metamask,
+which injects web3 into the webpage. To interact with the blockchain, Web3 uses JSON RPC. 
 
-2. In buyLoot, the first line assigns contract and accounts from this.state. The second line specifies that if the event is not explicitly handled, the default action should not be taken. In the next line, loading in this.state is set to true. In the next line, a token is bought with the buying id from this.state and then sent from the first account with a value of the buying price from this.state. Then, fetchLoot is called and buying in this.state is set to null. In the event of an error, the console will indicate that there is an error with an alert mentioning that creating the token failed. Buying in this.state is also set to null.
+2. In buyLoot, the first line assigns contract and accounts from this.state. The second line
+specifies that if the event is not explicitly handled, the default action should not be taken. In the
+next line, loading in this.state is set to true. In the next line, a token is bought with the buying
+id from this.state and then sent from the first account with a value of the buying price from
+this.state. Then, fetchLoot is called and buying in this.state is set to null. In the event of an
+error, the console will indicate that there is an error with an alert mentioning that creating the
+token failed. Buying in this.state is also set to null.
